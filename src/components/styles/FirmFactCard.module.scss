@@ -1,0 +1,73 @@
+.card {
+  height: 322px;
+  width: 306px;
+  background-color: #fff;
+  padding: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+
+  &.border:hover {
+    border-color: green;
+  }
+
+  &:hover {
+    background-color: green;
+    color: #fff;
+
+    .content h2,
+    .content p {
+      color: #fff;
+    }
+
+    .button {
+      background-color: #fff;
+      color: green;
+    }
+  }
+
+  .stateText {
+    color: #2d3e4e;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.border {
+  &:hover {
+    background-color: #fff;
+    color: green;
+
+    .content h2,
+    .content p {
+      color: green;
+    }
+
+    .button {
+      background-color: green;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 364px;
+  }
+}
