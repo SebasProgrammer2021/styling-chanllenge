@@ -1,11 +1,10 @@
 .card {
+  height: 322px;
+  width: 306px;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   padding: 20px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   &.border:hover {
     border-color: green;
@@ -26,23 +25,13 @@
     }
   }
 
-  .content {
-    margin-bottom: 10px;
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    p {
-      font-size: 1rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+  .stateText {
+    color: #2d3e4e;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
   }
 
   .button {
@@ -74,5 +63,11 @@
       background-color: green;
       color: #fff;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 364px;
   }
 }

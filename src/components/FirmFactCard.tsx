@@ -3,19 +3,18 @@ import styles from './styles//FirmFactCard.module.scss';
 import Button from './Button';
 
 interface FirmFactCardProps {
-  variant: 'default' | 'border';
+  variant: 'mainCard' | 'hover' | 'initial' | 'disabled';
+  buttonText?: string;
+  state?: string;
 }
 
-const FirmFactCard: React.FC<FirmFactCardProps> = ({ variant }) => {
-  const cardStyles = `${styles.card} ${variant === 'border' ? styles.border : ''}`;
+const FirmFactCard: React.FC<FirmFactCardProps> = ({ variant, buttonText, state }) => {
+  const cardStyles = `${styles.card} ${variant === 'hover' ? styles.border : ''}`;
 
   return (
     <div className={cardStyles}>
-      <div className={styles.content}>
-        <h2>Firm Fact Title</h2>
-        <p>Description of the firm fact. This is a longer description to demonstrate the text wrapping and truncation.</p>
-      </div>
-      <Button variant="default">Learn More</Button>
+      <Button variant="disabled">{buttonText}</Button>
+      <p className={styles.stateText}>{state}</p>
     </div>
   );
 };

@@ -1,19 +1,29 @@
 import styles from './styles/FirmFacts.module.scss';
 import FirmFactCard from './FirmFactCard';
-import Button from './Button';
 
 const FirmFacts = () => {
   return (
     <div className={styles.firmFacts}>
-      <h1 className={styles.title}>Firm Facts</h1>
-      <div className={styles.row}>
-        <FirmFactCard variant="default" />
-        <FirmFactCard variant="default" />
-        <FirmFactCard variant="default" />
-        <Button variant="default">Learn More</Button>
-        <Button variant="default">Learn More</Button>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.title}>Firm Facts</h1>
       </div>
       <div className={styles.row}>
+        <div className={styles.column}>
+          <FirmFactCard variant="mainCard" buttonText="This is a two line button that terminates with..." />
+        </div>
+        <div className={styles.columnsGroup}>
+          <FirmFactCard variant="initial" />
+          <FirmFactCard variant="initial" />
+          <FirmFactCard variant="initial" />
+          <FirmFactCard variant="initial" />
+          <FirmFactCard variant="initial" />
+        </div>
+        {/* <FirmFactCard variant="default" />
+        <FirmFactCard variant="default" /> */}
+        {/* <Button variant="default">Learn More</Button>
+        <Button variant="default">Learn More</Button> */}
+      </div>
+      {/* <div className={styles.row}>
         <FirmFactCard variant="border" />
         <FirmFactCard variant="border" />
         <FirmFactCard variant="border" />
@@ -29,7 +39,7 @@ const FirmFacts = () => {
           </svg>
           Learn More
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };
