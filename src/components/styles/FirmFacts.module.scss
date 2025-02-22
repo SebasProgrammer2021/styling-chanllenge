@@ -18,13 +18,13 @@
     line-height: 66px;
     letter-spacing: 0px;
     color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 22px;
   }
 
-  .row {
+  .cardsContainer {
     display: flex;
-
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex-direction: column;
     gap: 20px;
     width: 100%;
     max-width: 1680px;
@@ -34,11 +34,10 @@
       // grid-template-columns: 1fr;
     }
   }
-  
 
-  .columnsGroup{
+  .columnsGroup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;

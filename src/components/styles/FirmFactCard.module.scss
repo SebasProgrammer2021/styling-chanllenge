@@ -6,24 +6,24 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
   font-family: "Open Sans", sans-serif;
 
-  &.border:hover {
-    border-color: green;
-  }
+  // &.border:hover {
+  //   border-color: green;
+  // }
 
-  &:hover {
-    background-color: green;
-    color: #fff;
+  // &:hover {
+  //   background-color: green;
+  //   color: #fff;
 
-    .content h2,
-    .content p {
-      color: #fff;
-    }
+  //   .content h2,
+  //   .content p {
+  //     color: #fff;
+  //   }
 
-    .button {
-      background-color: #fff;
-      color: green;
-    }
-  }
+  //   .button {
+  //     background-color: #fff;
+  //     color: green;
+  //   }
+  // }
 
   .stateText {
     color: #2d3e4e;
@@ -32,20 +32,33 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.5px;
+    text-align: center;
   }
 
-  .button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.buttonText {
+  margin: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.mainCard {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
   }
 }
 

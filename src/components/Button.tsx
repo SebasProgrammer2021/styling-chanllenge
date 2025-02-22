@@ -12,9 +12,7 @@ const Button: React.FC<ButtonProps> = ({ variant, disabled = false, children }) 
 
   return (
     <button className={buttonStyles} disabled={disabled}>
-      <p className={styles.buttonText}>
-        {children}
-      </p>
+      {children}
     </button>
   );
 };

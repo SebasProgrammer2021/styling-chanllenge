@@ -2,25 +2,16 @@
   padding: 10px 20px;
   background-color: #2d3e4e;
   color: #fff;
-  // border: none;
+  width: 310px;
+  display: flex;
   border-radius: 70px;
-  // cursor: pointer;
+  cursor: pointer;
+  align-items: center;
   // transition: background-color 0.3s ease;
-  // font-size: 1rem;
   // white-space: nowrap;
   // overflow: hidden;
   // text-overflow: ellipsis;
   font-family: "Open Sans", sans-serif;
-
-  &.icon {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 5px;
-    }
-  }
 
   &.disabled {
     background-color: #ccc;
@@ -30,14 +21,4 @@
   &:hover:not(.disabled) {
     background-color: #2d3e4e;
   }
-}
-
-.buttonText {
-  margin: 0;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  text-align: center;
 }
