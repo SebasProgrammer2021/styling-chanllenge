@@ -1,0 +1,78 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+
+  &.border:hover {
+    border-color: green;
+  }
+
+  &:hover {
+    background-color: green;
+    color: #fff;
+
+    .content h2,
+    .content p {
+      color: #fff;
+    }
+
+    .button {
+      background-color: #fff;
+      color: green;
+    }
+  }
+
+  .content {
+    margin-bottom: 10px;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.border {
+  &:hover {
+    background-color: #fff;
+    color: green;
+
+    .content h2,
+    .content p {
+      color: green;
+    }
+
+    .button {
+      background-color: green;
+      color: #fff;
+    }
+  }
+}
