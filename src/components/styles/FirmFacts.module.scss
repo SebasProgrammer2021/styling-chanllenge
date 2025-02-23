@@ -78,64 +78,17 @@ html {
     14px,
     1vw,
     18px
-  ); // Ajusta la fuente entre 14px y 18px según el viewport
+  ); 
 }
 
 @media (max-width: 1024px) {
-  .grid {
-  }
+  
 }
 
-/* 📌 RESPONSIVE PARA MÓVILES (< 768px) */
 @media (max-width: 768px) {
-  .grid {
-  }
+ 
 }
 
-// Grid para Desktop
-// .div1 {
-//   grid-area: 1 / 1 / 3 / 2;
-// } // Tarjeta grande
-// .div2 {
-//   grid-area: 1 / 2 / 2 / 3;
-// }
-// .div3 {
-//   grid-area: 1 / 3 / 2 / 4;
-// }
-// .div4 {
-//   grid-area: 1 / 4 / 2 / 5;
-// }
-// .div5 {
-//   grid-area: 2 / 2 / 3 / 3;
-// }
-// .div6 {
-//   grid-area: 2 / 3 / 3 / 4;
-// }
-// .div7 {
-//   grid-area: 2 / 4 / 3 / 5;
-// }
 
-/* 📌 RESPONSIVE PARA TABLET (768px) */
 @media (min-width: 768px) {
-  //   .div1 {
-  //     grid-area: 1 / 1 / 2 / 3;
-  //   }
-  //   .div2 {
-  //     grid-area: 2 / 1 / 3 / 2;
-  //   }
-  //   .div3 {
-  //     grid-area: 2 / 2 / 3 / 3;
-  //   }
-  //   .div4 {
-  //     grid-area: 3 / 1 / 4 / 2;
-  //   }
-  //   .div5 {
-  //     grid-area: 3 / 2 / 4 / 3;
-  //   }
-  //   .div6 {
-  //     grid-area: 4 / 1 / 5 / 2;
-  //   }
-  //   .div7 {
-  //     grid-area: 4 / 2 / 5 / 3;
-  //   }
 }
