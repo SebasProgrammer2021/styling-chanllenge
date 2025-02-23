@@ -4,24 +4,23 @@ import Button from './Button';
 import magnifyingGlass from './assets/magnifying-glass.svg';
 
 interface FirmFactCardProps {
-  variant: 'mainCard' | 'hover' | 'initial' | 'disabled' | 'green';
-  buttonText?: string;
-  state?: string;
+  variant: "default" | "border";
+  large?: boolean;
+  className?: string;
   icon?: boolean;
+  stateText?: string;
+  disabled?: boolean;
+  buttonContent?: string;
 }
 
-const FirmFactCard: React.FC<FirmFactCardProps> = ({ variant, buttonText, state, icon }) => {
-  const cardStyles = `${styles.card} ${styles[variant]}`;
-
+const FirmFactCard: React.FC<FirmFactCardProps> = ({ variant, className, stateText, disabled, icon, buttonContent }) => {
+  // console.log("🚀 ~ className:", className)
+  // console.log("🚀 ~ variant:", variant)
   return (
-    <div className={cardStyles}>
-      <Button variant="disabled">
-        {icon && <img className={styles.icon} src={magnifyingGlass} alt="magnifying glass" width={100} height={100} />}
-        <p className={styles.buttonText}>
-          {buttonText}
-        </p>
+    <div className={`${styles[variant]} ${className}`}>
+      <Button variant={variant === "border" ? "icon" : variant} icon={icon} disabled={disabled}>
+        {buttonContent}
       </Button>
-      <p className={styles.stateText}>{state}</p>
     </div>
   );
 };

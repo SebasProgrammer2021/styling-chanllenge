@@ -1,45 +1,141 @@
-.firmFacts {
+.firmFactsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #2d3e4e;
   margin-top: 100px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  background-color: #2d3e4e;
+  padding: 50px 63px 85px 79px;
+
+  .closeIconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .closeIconButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
   .titleContainer {
     width: 100%;
+    height: fit-content;
+    margin-top: 33px;
   }
 
-  .title {
+  h2 {
     font-family: Open Sans;
     font-weight: 400;
     font-size: 60px;
     line-height: 66px;
     letter-spacing: 0px;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: white;
+    text-align: left;
     padding-bottom: 22px;
+    margin: 0px;
+    border-bottom: 1px solid #ffffff;
   }
+}
 
-  .cardsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 1680px;
-    margin-bottom: 20px;
+.cardsLayout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  padding-top: 51px;
+  width: 100%;
+  margin: 0 auto;
+  // max-width: 1680px;
+  // min-width: 768px;
+}
 
-    @media (max-width: 768px) {
-      // grid-template-columns: 1fr;
-    }
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div7 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+html {
+  font-size: clamp(
+    14px,
+    1vw,
+    18px
+  ); // Ajusta la fuente entre 14px y 18px según el viewport
+}
+
+@media (max-width: 1024px) {
+  .grid {
   }
+}
 
-  .columnsGroup {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* 📌 RESPONSIVE PARA MÓVILES (< 768px) */
+@media (max-width: 768px) {
+  .grid {
   }
+}
+
+// Grid para Desktop
+// .div1 {
+//   grid-area: 1 / 1 / 3 / 2;
+// } // Tarjeta grande
+// .div2 {
+//   grid-area: 1 / 2 / 2 / 3;
+// }
+// .div3 {
+//   grid-area: 1 / 3 / 2 / 4;
+// }
+// .div4 {
+//   grid-area: 1 / 4 / 2 / 5;
+// }
+// .div5 {
+//   grid-area: 2 / 2 / 3 / 3;
+// }
+// .div6 {
+//   grid-area: 2 / 3 / 3 / 4;
+// }
+// .div7 {
+//   grid-area: 2 / 4 / 3 / 5;
+// }
+
+/* 📌 RESPONSIVE PARA TABLET (768px) */
+@media (min-width: 768px) {
+  //   .div1 {
+  //     grid-area: 1 / 1 / 2 / 3;
+  //   }
+  //   .div2 {
+  //     grid-area: 2 / 1 / 3 / 2;
+  //   }
+  //   .div3 {
+  //     grid-area: 2 / 2 / 3 / 3;
+  //   }
+  //   .div4 {
+  //     grid-area: 3 / 1 / 4 / 2;
+  //   }
+  //   .div5 {
+  //     grid-area: 3 / 2 / 4 / 3;
+  //   }
+  //   .div6 {
+  //     grid-area: 4 / 1 / 5 / 2;
+  //   }
+  //   .div7 {
+  //     grid-area: 4 / 2 / 5 / 3;
+  //   }
 }
