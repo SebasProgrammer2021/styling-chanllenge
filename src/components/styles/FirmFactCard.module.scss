@@ -9,29 +9,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
     background-color: #07c06a;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 
     button {
       border-color: white;
       background-color: #07c06a;
       border: 2px solid #ffffff;
+      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
       &:disabled {
         background-color: #aaaaaa;
         cursor: not-allowed;
         pointer-events: none;
+        transition: background-color 0.3s ease-in-out;
 
         p {
           background-color: #aaaaaa;
+          transition: background-color 0.3s ease-in-out;
         }
       }
     }
 
     p {
       background-color: #07c06a;
+      transition: background-color 0.3s ease-in-out;
     }
   }
 
@@ -53,21 +59,26 @@
   align-items: start;
   border: 15px solid transparent;
   justify-content: center;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &:hover {
     border-color: #07c06a;
     cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
 
     button {
       background-color: #07c06a;
+      transition: background-color 0.3s ease-in-out;
 
       &:disabled {
         background-color: #aaaaaa;
         cursor: not-allowed;
         pointer-events: none;
+        transition: background-color 0.3s ease-in-out;
 
         p {
           background-color: #aaaaaa;
+          transition: background-color 0.3s ease-in-out;
         }
       }
     }
@@ -75,6 +86,7 @@
     p {
       background-color: #07c06a;
       border-radius: 70px;
+      transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
     }
   }
 }
