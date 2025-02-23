@@ -1,43 +1,81 @@
-.button {
-  padding: 10px 20px;
-  background-color: #2d3e4e;
+.default {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  max-width: 100%;
   color: #fff;
-  // border: none;
   border-radius: 70px;
-  // cursor: pointer;
-  // transition: background-color 0.3s ease;
-  // font-size: 1rem;
-  // white-space: nowrap;
-  // overflow: hidden;
-  // text-overflow: ellipsis;
-  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  background-color: #2d3e4e;
+  height: 70px;
+  width: 310px;
+  align-items: center;
+  padding: 11px 19px 11px 27px;
 
-  &.icon {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 5px;
-    }
-  }
-
-  &.disabled {
-    background-color: #ccc;
+  &:disabled {
+    background-color: #aaaaaa;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
-  &:hover:not(.disabled) {
-    background-color: #2d3e4e;
+  p {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+    border-radius: 70px;
+    // width: 310px;
   }
 }
 
-.buttonText {
-  margin: 0;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  text-align: center;
+.icon {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  background-color: #2d3e4e;
+  border-radius: 70px;
+  height: 70px;
+  width: 310px;
+  align-items: center;
+  background-color: #2d3e4e;
+  margin-top: 50px;
+  padding: 11px 19px 11px 27px;
+  text-overflow: ellipsis;
+
+  p {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+    // width: 310px;
+  }
+
+  &:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.iconMagnifyingGlass {
+  margin-right: 16px;
+}
+
+.noicon {
+  p {
+    width: 100%;
+    text-align: center;
+  }
 }

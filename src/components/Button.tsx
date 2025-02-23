@@ -1,18 +1,20 @@
 import React from 'react';
 import styles from './styles/Button.module.scss';
+import magnifyingGlass from './assets/magnifying-glass.svg';
 
 interface ButtonProps {
-  variant: 'mainCard' | 'hover' | 'initial' | 'disabled' | 'icon';
+  variant: 'default' | "icon";
   disabled?: boolean;
+  icon?: boolean;
   children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, disabled = false, children }) => {
-  const buttonStyles = `${styles.button} ${variant === 'icon' ? styles.icon : ''} ${disabled ? styles.disabled : ''}`;
+const Button: React.FC<ButtonProps> = ({ variant, disabled, icon = false, children }) => {
 
   return (
-    <button className={buttonStyles} disabled={disabled}>
-      <p className={styles.buttonText}>
+    <button className={`${styles[variant]}  ${!icon && styles.noicon}`} disabled={disabled}>
+      {icon && <img className={styles.iconMagnifyingGlass} src={magnifyingGlass} alt="magnifying glass" width={22} height={22} />}
+      <p>
         {children}
       </p>
     </button>

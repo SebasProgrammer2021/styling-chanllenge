@@ -1,73 +1,92 @@
-.card {
+.default {
+  background-color: white;
+  // width: clamp(80px, 18vw, 364px);
+  // height: clamp(60px, 16vw, 322px);
+  // width: 80px;
+  // height: 60px;
+  width: 364px;
   height: 322px;
-  width: 306px;
-  background-color: #fff;
-  padding: 20px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  font-family: "Open Sans", sans-serif;
-
-  &.border:hover {
-    border-color: green;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: green;
-    color: #fff;
-
-    .content h2,
-    .content p {
-      color: #fff;
-    }
-
-    .button {
-      background-color: #fff;
-      color: green;
-    }
-  }
-
-  .stateText {
-    color: #2d3e4e;
-    font-family: Open Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-  }
-
-  .button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    background-color: #07c06a;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transition: background-color 0.3s ease-in-out;
+
+    button {
+      border-color: white;
+      background-color: #07c06a;
+      border: 2px solid #ffffff;
+      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+      &:disabled {
+        background-color: #aaaaaa;
+        cursor: not-allowed;
+        pointer-events: none;
+        transition: background-color 0.3s ease-in-out;
+
+        p {
+          background-color: #aaaaaa;
+          transition: background-color 0.3s ease-in-out;
+        }
+      }
+    }
+
+    p {
+      background-color: #07c06a;
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &:first-child {
+    height: auto;
   }
 }
 
 .border {
+  background-color: white;
+  // width: 349.524px;
+  width: auto;
+  height: auto;
+  // max-width: 364px;
+  // max-height: 322px;
+  // width: clamp(65px, 14vw, 364px);
+  // height: clamp(55px, 13vw, 322px);
+  display: flex;
+  align-items: start;
+  border: 15px solid transparent;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
   &:hover {
-    background-color: #fff;
-    color: green;
+    border-color: #07c06a;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
 
-    .content h2,
-    .content p {
-      color: green;
+    button {
+      background-color: #07c06a;
+      transition: background-color 0.3s ease-in-out;
+
+      &:disabled {
+        background-color: #aaaaaa;
+        cursor: not-allowed;
+        pointer-events: none;
+        transition: background-color 0.3s ease-in-out;
+
+        p {
+          background-color: #aaaaaa;
+          transition: background-color 0.3s ease-in-out;
+        }
+      }
     }
 
-    .button {
-      background-color: green;
-      color: #fff;
+    p {
+      background-color: #07c06a;
+      border-radius: 70px;
+      transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
     }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .card {
-    width: 364px;
   }
 }
