@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './styles//FirmFactCard.module.scss';
 import Button from './Button';
-import magnifyingGlass from './assets/magnifying-glass.svg';
 
 interface FirmFactCardProps {
   variant: "default" | "border";
