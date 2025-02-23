@@ -1,9 +1,5 @@
 .default {
   background-color: white;
-  // width: clamp(80px, 18vw, 364px);
-  // height: clamp(60px, 16vw, 322px);
-  // width: 80px;
-  // height: 60px;
   width: 364px;
   height: 322px;
   display: flex;
@@ -48,13 +44,8 @@
 
 .border {
   background-color: white;
-  // width: 349.524px;
   width: auto;
   height: auto;
-  // max-width: 364px;
-  // max-height: 322px;
-  // width: clamp(65px, 14vw, 364px);
-  // height: clamp(55px, 13vw, 322px);
   display: flex;
   align-items: start;
   border: 15px solid transparent;
