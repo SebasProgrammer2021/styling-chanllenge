@@ -32,7 +32,7 @@
   p {
     color: #ffffff;
     font-family: Open Sans;
-    font-size: 19px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.5px;
     line-height: 24px;
@@ -73,7 +73,7 @@
   p {
     color: #ffffff;
     font-family: Open Sans;
-    font-size: 19px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.5px;
     line-height: 24px;
@@ -90,5 +90,21 @@
   p {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1670px) {
+  .default,
+  .icon {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1670px) {
+  .default,
+  .icon {
+    p {
+      font-size: 19px;
+    }
   }
 }
