@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
 
   &:hover {
     background-color: #07c06a;
@@ -16,7 +17,8 @@
       border-color: white;
       background-color: #07c06a;
       border: 2px solid #ffffff;
-      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out;
 
       &:disabled {
         background-color: #aaaaaa;
@@ -50,7 +52,8 @@
   align-items: start;
   border: 15px solid transparent;
   justify-content: center;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    width 0.3s ease-in-out, height 0.3s ease-in-out;
 
   &:hover {
     border-color: #07c06a;
@@ -77,7 +80,28 @@
     p {
       background-color: #07c06a;
       border-radius: 70px;
-      transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out,
+        border-radius 0.3s ease-in-out;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .default {
+    &:first-child {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1670px) {
+  .default {
+    width: 270px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .border {
+    width: 241px;
+    transition: width 0.3s ease-in-out;
   }
 }
