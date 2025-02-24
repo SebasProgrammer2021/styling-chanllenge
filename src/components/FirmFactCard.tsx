@@ -13,8 +13,6 @@ interface FirmFactCardProps {
 }
 
 const FirmFactCard: React.FC<FirmFactCardProps> = ({ variant, className, stateText, disabled, icon, buttonContent }) => {
-  // console.log("🚀 ~ className:", className)
-  // console.log("🚀 ~ variant:", variant)
   return (
     <div className={`${styles[variant]} ${className}`}>
       <Button variant={variant === "border" ? "icon" : variant} icon={icon} disabled={disabled}>
